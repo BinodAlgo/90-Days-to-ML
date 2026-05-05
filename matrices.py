@@ -23,4 +23,8 @@ print(f"C = {C}\n")
 print(f"D = {D}\n")
 print(f"weights = {weights}\n")
 
-
+# In ML, we often get data in wrong shape or dimension, so we need to reshape the data
+array_1D = np.array([1,2,3,4,5,6]) 
+array_2D = array_1D.reshape((2,3))
+array_3D = array_1D.reshape((1,2,3))
+print(f"array_3D = {array_3D}\n")
