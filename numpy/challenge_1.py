@@ -1,4 +1,5 @@
 """
+Challenge 1: Image processing 
 In computer vision, images are treated as tensors or -3D arrays 
 with 3 dimensions(width, height, channels)
 Example - A 28 x 28 pixel image of a handwritten digit (like those in MNIST)

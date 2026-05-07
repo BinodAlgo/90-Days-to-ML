@@ -1,5 +1,5 @@
 """
-# Forward Pass Neural Network Architecture
+Challeng2 : Forward Pass Neural Network Architecture
 Setup
 Inputs (X): A batch of 3 samples, where each sample has 4 features (Shape: 3x4).
 Weights (W): A weight matrix for a layer with 2 neurons (Shape: 4x2).
