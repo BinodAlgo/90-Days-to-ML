@@ -24,3 +24,13 @@ Machine Learning algorithms (like Gradient Descent, which we will build later) u
 $$
 X_{scaled} = \frac{X - X_{min}}{X_{max} - X_{min}}
 $$
+
+### 3. The Math of Text: One-Hot Encoding
+Machine Learning models cannot read text. They only read Tensors. If you have a category like "Workout Type" (e.g., Push, Pull, Legs), you must convert it to numbers.
+
+**The Trap**: Do not convert them to 1, 2, 3. The math engine will assume 3 (Legs) is numerically "greater" than 1 (Push).
+
+**The Math**: We convert categories into Orthogonal Vectors (matrices where only one element is 1 and the rest are 0). Let's say we have $N$ categories. We create an $N$-dimensional vector:
+* Push = `[1, 0, 0]`
+* Pull = `[0, 1, 0]`
+* Legs = `[0, 0, 1]`
