@@ -15,7 +15,7 @@ print(f" Original Gym Data: \n{gym_df}\n")
 
 # Step 2: Handle missing data
 median_ages = gym_df['Age'].median()
-gym_df['Age'] =gym_df['Age'].fillna(median_ages,inplace=True)
+gym_df['Age'] = gym_df['Age'].fillna(median_ages)
 print(f"\nData after filling missing ages: \n{gym_df}\n") 
 
 
